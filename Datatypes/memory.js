@@ -24,6 +24,6 @@ let fstuser = {
 
 let anotheruser = fstuser
 
-anotheruser.email = "anotheruser@gmail.com"//changed because it is heap memory
+anotheruser.email = "anotheruser@gmail.comm"
 console.log(fstuser);
 console.log(anotheruser);
