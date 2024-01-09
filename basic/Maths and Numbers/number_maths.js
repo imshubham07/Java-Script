@@ -36,5 +36,5 @@ console.log(Math.floor(Math.random()*10)+1);
 const min = 10
 const max = 20
 
-// it is a type of formula which through we are set random value
+// it is a type of formula which through we are set random value 
 console.log(Math.floor(Math.random()*(max - min + 1)) + min);
