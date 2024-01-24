@@ -50,10 +50,37 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser); 
-console.log(Object.keys(tinderUser)); // use object as array
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser)); 
+// console.log(tinderUser); 
+// console.log(Object.keys(tinderUser)); // use object as array
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser)); 
 
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));// hasOnProperty Checks whether the Value exists or not
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));// hasOnProperty Checks whether the Value exists or not
+
+//****** Object De-Structure in javaScript*****************
+
+const course = {
+    courseName :"JS In Hindi & English",
+    prise:"999",
+    courseInstructor: "hitesh",
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course //de-structuring in java Script
+
+// console.log(courseInstructor);
+
+console.log(instructor);
+
+
+// {
+//     "name": "Shubham",
+//     "courseName": "Js in English & Hindi",
+//     "price": "free"
+// }
+
+// JSON => json is the basicaly javascript notation
+
+
