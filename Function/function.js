@@ -38,3 +38,35 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))
 
 
+// (...) it is called rest operator
+function calculateCarPrice(val1,...num1){
+    return num1;
+}
+// console.log(calculateCarPrice(200,400,500,700));
+
+
+//***passing Object */
+const user = {
+    username: "shubham",
+    price: 250//cheak price name to given function
+}
+
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+// handleObject(user)
+handleObject({
+    username: "Shubham",
+    price: 350
+})
+
+///**array pasiing in function */
+
+const myNewArray = [200,500,650,350,450,900]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([250,600,420]));
