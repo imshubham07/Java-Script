@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning in 4th lacture</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="Language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addlanguage(langName){
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.Language').appendChild(li);
+    }
+    addlanguage("Pyhhon")
+    addlanguage("TypeScript")
+
+    function addOptiLang(langName){
+        const li = document.createElement('li')
+        const addText = document.createTextNode(langName)
+        li.appendChild(addText)
+        document.querySelector('.Language').appendChild(li)
+    }
+    addOptiLang('Golang')
+    addOptiLang("JavaScript")
+    
+    // Edit in JavaScript
+
+    // const secondLang = document.querySelector("li:nth-child(2)")
+    // //secondLang.innerHTML = "Mojo"
+    // const newli = document.createElement('li')
+    // newli.textContent = "Mojo"
+    // secondLang.replaceWith(newli)
+
+    //edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>Java</li>'
+
+    // remove 
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+</script>
+</html>
