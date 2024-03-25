@@ -18,4 +18,85 @@
         </ul>
    </div>
 </body>
+<script>
+    // document.getElementById('owl').onclick = function(){
+    //     alert("Owl Cliccked")
+    // }
+
+    
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     alert("Owl Clicked Again");
+    // })
+    //jQuery- onEventListener
+    //attachEvent()
+    // type, timestamp, defaultPrevented
+    //Target,  toElement,srcElement, currentTarget,
+    //clientX, clientY, screenx, screenY
+    //altkey, ctrlkey, shiftkey, keyCode 
+    
+    
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log(e);
+    // },false)
+
+    /* There are two type or phase of event Propogation.
+    1. Bubbling Up => In this bubbling form the event goes from bottom to top.
+
+    Example:>
+
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside the ul");
+    },false)
+
+    document.getElementById('owl').addEventListener('click', function(e){
+        console.log("owl clicked");
+    }, false)
+    
+    2.Capturing :> In this Capturing method form the event goes from top to bottom.
+
+    Example:>
+
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside the ul");
+    },true)
+
+    document.getElementById('owl').addEventListener('click', function(e){
+        console.log("owl clicked");
+    }, true)
+    */
+
+    // stopPropogation
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // },false)
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation()
+    // }, false)
+
+
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("Google Clicked");
+    // })
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName==='IMG'){
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+        // removeIt.parentNode.removeChild(removeIt)
+    },false)
+    
+    
+
+
+
+</script>
 </html>
