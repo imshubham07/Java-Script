@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure in js</title>
+</head>
+
+<body style="background-color: #313131;">
+
+</body>
+<script>
+    // function init() {
+    //     let name = "Mozilla";
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+    // function outer(){
+    //     let username = "shubham"
+    //     function inner(){
+    //         console.log("inner", username);
+    //     }
+    //     inner()
+    // }
+    // outer()
+    // console.log("two Outer ",username);
+
+
+
+    // ***** Closure in js*******
+    function makeFunc() {
+        const name = "Mozilla";
+        function displayName() {
+            console.log(name);
+        }
+        return displayName;
+    }
+
+    const myFunc = makeFunc();
+    myFunc();
+
+
+</script>
+
+</html>
