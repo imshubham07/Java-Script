@@ -7,8 +7,9 @@
     <title>Closure in js</title>
 </head>
 
-<body style="background-color: #313131;">
-
+<body style="background-color: hsl(0, 0%, 19%);">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
 </body>
 <script>
     // function init() {
@@ -33,18 +34,37 @@
 
 
     // ***** Closure in js*******
-    function makeFunc() {
-        const name = "Mozilla";
-        function displayName() {
-            console.log(name);
+    // function makeFunc() {
+    //     const name = "Mozilla";
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     return displayName;
+    // }
+
+    // const myFunc = makeFunc();
+    // myFunc();
+
+
+</script>
+<script>
+    // document.getElementById("orange").onclick = function(){
+    //     document.body.style.backgroundColor = `orange`
+    // }
+    // document.getElementById("green").onclick = function(){
+    //     document.body.style.backgroundColor = `green`
+    // }
+
+    function clickHandler(color){
+        // document.body.style.backgroundColor = `${color}`
+        
+        return function (){
+            document.body.style.backgroundColor = `${color}`
+
         }
-        return displayName;
     }
-
-    const myFunc = makeFunc();
-    myFunc();
-
-
+    document.getElementById('orange').onclick = clickHandler("orange")
+    document.getElementById('green').onclick = clickHandler("green")
 </script>
 
 </html>
