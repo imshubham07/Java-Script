@@ -1,2 +1,2 @@
 # Java-Script
-Learning javascript  
+## Completed javascript  
