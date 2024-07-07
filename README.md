@@ -114,7 +114,7 @@
 - null ➜ it is standalone value, yes it is datatype as well
 - null is representaiton of empty value
 - null means value is empty, example, like giving empty value while monitoring the temp, as we cant give 0, as 0 has some value in temp scale
-- ndefined ➜ means some value is not defined
+- Undefined ➜ means some value is not defined
 - Symbol datatype is used to fincdout the uniquness ➜ it is used in react, to find the component
 - typeof ➜ to know the type of any variable, we use typeof
 - **Example:**
